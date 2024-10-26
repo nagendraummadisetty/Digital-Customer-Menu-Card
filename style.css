@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+h1, h3, h4 {
+    text-align: center;
+    color: #333;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 150px;
+    background-color: #e8e8e8;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 50%;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#orderSummary {
+    margin-top: 20px;
+    display: none;
+}
+
+#orderSummary ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#orderSummary li {
+    padding: 5px 0;
+}
+
+#payBtn {
+    background-color: #007bff;
+    color: white;
+    margin-top: 10px;
+}
+
+#payBtn:hover {
+    background-color: #0056b3;
+}
+
+.contact-info {
+    margin-top: 30px;
+    text-align: center;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#cardPayment {
+    margin-top: 20px;
+}
+
+#cardPayment input {
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}

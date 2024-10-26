@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Spice Route Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to The Spice Route Restaurant</h1>
+        
+        <!-- Menu Display -->
+        <h3>Menu</h3>
+        <div class="menu">
+            <div class="menu-item">
+                <img src="./images/veggies.jpeg" alt="veggies">
+                <h4>Veggie Wraps</h4>
+                <p>Rs199</p>
+                <button class="add-to-cart" data-item="Veggie Wraps" data-price="199">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="./images/pasta.jpeg" alt="Pasta">
+                <h4>Pasta</h4>
+                <p>Rs150</p>
+                <button class="add-to-cart" data-item="pasta" data-price="150">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="./images/pizza.jpeg" alt="Pizza">
+                <h4>Pizza</h4>
+                <p>Rs100</p>
+                <button class="add-to-cart" data-item="pizza" data-price="100">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="./images/bugger.jpeg" alt="Burger">
+                <h4>Burger</h4>
+                <p>Rs65</p>
+                <button class="add-to-cart" data-item="burger" data-price="65">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="./images/pakoras.jpeg" alt="pakoras">
+                <h4>Pakoras</h4>
+                <p>Rs50</p>
+                <button class="add-to-cart" data-item="pakoras" data-price="50">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="./images/salad.jpeg" alt="Salad">
+                <h4>Salad</h4>
+                <p>Rs100</p>
+                <button class="add-to-cart" data-item="salad" data-price="100">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="./images/samosa.jpeg" alt="Samosa">
+                <h4>Samosa</h4>
+                <p>Rs15</p>
+                <button class="add-to-cart" data-item="samosa" data-price="15">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="./images/frensh.jpeg" alt="French Fries">
+                <h4>French Fries</h4>
+                <p>Rs35</p>
+                <button class="add-to-cart" data-item="French Fries" data-price="35">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="./images/nachos.jpeg" alt="Nachos">
+                <h4>Nachos</h4>
+                <p>Rs70</p>
+                <button class="add-to-cart" data-item="Nachos" data-price="70">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="./images/tacos.jpeg" alt="Tacos">
+                <h4>Tacos</h4>
+                <p>Rs60</p>
+                <button class="add-to-cart" data-item="Tacos" data-price="60">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="./images/mushrooms.jpeg" alt="stuffed mushrooms">
+                <h4>Stuffed Mushrooms</h4>
+                <p>Rs159</p>
+                <button class="add-to-cart" data-item="Stuffed Mushrooms" data-price="159">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="./images/springrolls.jpeg" alt="Spring rolls">
+                <h4>Spring Rolls</h4>
+                <p>Rs30</p>
+                <button class="add-to-cart" data-item="Spring Rolls" data-price="30">Add to Cart</button>
+            </div>
+        </div>
+        
+        <!-- Payment Type Selection -->
+        <div id="paymentTypeSection">
+            <h3>Select Payment Type</h3>
+            <select id="paymentType">
+                <option value="cash">Cash</option>
+                <option value="upi">UPI</option>
+                <option value="card">Card</option>
+                <option value="phonepay">PhonePe</option>
+                <option value="gpay">Google Pay</option>
+                <option value="paytm">Paytm</option>
+            </select>
+        </div>
+
+        <!-- Order Summary Section -->
+        <div id="orderSummary">
+            <h3>Order Summary</h3>
+            <ul id="orderList"></ul>
+            <h4>Total Amount: Rs<span id="totalAmount">0</span></h4>
+            <button id="payBtn">Pay</button>
+        </div>
+
+        <!-- Card Payment Form -->
+        <div id="cardPayment" style="display:none;">
+            <h3>Card Payment</h3>
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" required>
+            <label for="expDate">Expiration Date:</label>
+            <input type="text" id="expDate" placeholder="MM/YY" required>
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" placeholder="123" required>
+            <button id="submitPaymentBtn">Submit Payment</button>
+            <button id="cancelPaymentBtn">Cancel</button>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <h4>Contact Us</h4>
+            <p>For delivery inquiries, call us at: <strong>+91 1234567890</strong></p>
+            <p>Email: <strong>support@thespicerouterestaurant.com</strong></p>
+        </div>
+
+        <footer>
+        <p>&copy; 2024 Nagendra's Restaurant. All rights reversed.</p>
+    </footer>
+    </div>
+    
+
+    <!-- JavaScript Section -->
+    <script src="app.js"></script>
+</body>
+</html>
